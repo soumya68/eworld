@@ -430,7 +430,13 @@ echo $json_data['opId'];                        '
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.
 
 
-
+//////////////////////////////////////////////////
+	//IMAGE PHP CODES
+	
+	$image = $_FILES['image']['name'];
+		$imageextention = strtolower(pathinfo($image,PATHINFO_EXTENSION));
+		$imagesize=$_FILES["image"]["size"];
+	
 
 
 
